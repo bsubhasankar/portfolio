@@ -78,6 +78,7 @@ header {
 .about {
     padding: 60px 0;
     background-color: #f8f9fa;
+    
 }
 
 #about-para {
@@ -100,8 +101,9 @@ header {
 #my-image {
   height: 240px;
   width: 240px;
-  margin-top: 30%;
-  float: right; /* Use float to place it on the right side */
+  margin-top: 0%;
+  float: right;
+  margin-right: 30%;
 }
 
 #my-image img {
@@ -129,6 +131,7 @@ header {
 #expertise,
 #experience {
   padding: 40px 0;
+  
 }
 
 #education h2,
@@ -523,3 +526,49 @@ footer p {
 }
 /* Media Queries */
 
+/* Media Queries */
+
+/* For small screens (max-width: 767px) */
+@media (max-width: 767px) {
+
+
+  .contact-content {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: -60px; 
+  }
+  
+  .get-in-touch {
+    order: 2;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    padding: 10%;
+    order: 1;
+    text-align: left;
+    
+  }
+  
+  .contact-details h2 {
+    margin-top: 10px;
+  }
+  
+  .contact-details ul {
+    margin-left: 0;
+  }
+  #my-image {
+    height: 150px;
+    width: 150px;
+    margin-top: 0%;
+    align-items: center;
+    margin-right: 27%;
+  }
+  
+  #my-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
