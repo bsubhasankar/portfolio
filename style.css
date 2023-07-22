@@ -42,7 +42,7 @@ header {
   background: url('path-to-your-hamburger-icon.png') no-repeat center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
   .navbar .collapse .navbar-nav {
       margin-top: 10px;
   }
@@ -234,41 +234,6 @@ header {
 
 /*-----------------NEW__________________*/
 
-
-
-nav ul li{
-  display: inline-block;
-  list-style: none;
-}
-nav ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  position: relative;
-}
-nav ul li a::after{
-  content: '';
-  width: 0;
-  height: 2px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-nav ul li a:hover::after{
-  width: 100%;
-
-}
-.container{
-  padding: 10px 10%;
-}
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
 .intro-content .intro-position span {
 	display: inline-block;
@@ -557,61 +522,3 @@ footer p {
   color: #f9f9f9;
 }
 /* Media Queries */
-
-/* For small screens (max-width: 767px) */
-@media (max-width: 767px) {
-  .container {
-    padding: 0 10px;
-  }
-
-  .header-text h1 {
-    font-size: 2rem;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-
-  .navbar ul li {
-    margin: 0;
-  }
-
-  .navbar-toggle {
-    display: block;
-    font-size: 24px;
-    color: #cc005f;
-    cursor: pointer;
-  }
-
-  .navbar.collapsed ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar.collapsed ul li {
-    margin: 15px 0;
-  }
-}
-
-/* For medium screens (min-width: 768px) and large screens (min-width: 992px) */
-@media (min-width: 768px) and (min-width: 992px) {
-  .container {
-    padding: 0;
-  }
-
-  .navbar ul {
-    display: flex;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-}
-
-/* For extra large screens (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .container {
-    padding: 0;
-  }
-}
