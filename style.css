@@ -1,0 +1,652 @@
+/* Common styles for all devices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fcfbfb; /* Adjust the color as needed */
+  background-color: #000304; /* Adjust the background color as needed */
+}
+
+.container {
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(images/abstract-lines-dark-4k-mg-1360x768.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Header text styles */
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.intro-social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* --------------About section styles----------*/
+.about {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#about-para {
+    text-align: left;
+}
+
+#about-para h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about-para p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+/* ... Previous CSS code ... */
+
+#my-image {
+  height: 240px;
+  width: 240px;
+  margin-top: 30%;
+  float: right; /* Use float to place it on the right side */
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Skills section styles */
+#skills {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.skills-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Education, Expertise, and Experience Sections */
+
+#education,
+#expertise,
+#experience {
+  padding: 40px 0;
+}
+
+#education h2,
+#expertise h2,
+#experience h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#education ul,
+#expertise ul,
+#experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#education li,
+#expertise li,
+#experience li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.experience-details {
+  margin-top: 30px;
+}
+
+.experience-details h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.experience-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-details li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Add some spacing between sections */
+#education {
+  border-top: 1px solid #ccc;
+}
+
+#expertise {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#experience {
+  border-bottom: 1px solid #ccc;
+}
+
+  
+/* Contact Section */
+#contact {
+    text-align: left;
+    color: #333333;
+}
+
+#contact h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+.contact-social {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-social li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contact-social li a {
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.contact-social li a:hover {
+    color: #007bff;
+}
+
+
+/*-----------------NEW__________________*/
+
+.logo{
+    max-width: 10%;
+    min-width: 8%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-text{
+    text-align: center;
+    margin-top:0;
+    font-size: 30px;    
+    
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.header-text h3 span{
+    color: #cc005f;
+}
+
+.intro-content .intro-position span {
+	display: inline-block;
+}
+.intro-content .intro-position span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+.intro-content .intro-position span:first-child::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: rgba(255, 255, 255, 0.3);
+}
+/*---------Social Icons--------------*/
+.intro-social {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 220%;
+	bottom: 7.2rem;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+.intro-social li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+.intro-social li a, .intro-social li a:visited {
+	color: #fdfcfc;
+}
+.intro-social li b:hover, .intro-social li b:focus {
+    color: #08a5ed;
+    
+}
+.intro-social li c:hover, .intro-social li b:focus {
+        color: #044afa;   
+            
+}
+.intro-social li a:hover, .intro-social li a:focus {
+	color: #cc005f;
+}
+ 
+  /* Header Styles */
+  .navbar {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc005f;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #cc005f;
+  }
+  
+  /* Main Content Styles */
+  .my-5 {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #cc005f;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  #education ul,
+  #expertise ul,
+  #experience ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  #education ul li,
+  #expertise ul li,
+  #experience ul li {
+    margin-bottom: 10px;
+  }
+  
+  #experience h3,
+  #experience h4 {
+    color: #cc005f;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+
+
+/* General Styles */
+
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  
+  /* Skill Levels */
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .skill {
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .stars {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #efb301; /* Golden color */
+  }
+  
+  .star {
+    color: #efb301; /* Golden color */
+    margin: 0 2px;
+  }
+  
+  .skill-description {
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Animation */
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInRotate {
+    from {
+      opacity: 0;
+      transform: rotate(20deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0);
+    }
+  }
+  
+
+
+
+/* Contact Section */
+#contact {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+ 
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.get-in-touch,
+.contact-details {
+  flex: 1;
+  text-align: left;
+}
+
+.get-in-touch h2,
+.contact-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.get-in-touch p {
+  font-size: 16px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea.form-control {
+  resize: vertical;
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 95px; /* Add margin to move the contact text to the right */
+}
+.contact-details h2{
+  margin-left: 95px;
+}
+.contact-details li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #f9f9f9;
+}
+/* Media Queries */
+
+/* For small screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    font-size: 24px;
+    color: #cc005f;
+    cursor: pointer;
+  }
+
+  .navbar.collapsed ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar.collapsed ul li {
+    margin: 15px 0;
+  }
+}
+
+/* For medium screens (min-width: 768px) and large screens (min-width: 992px) */
+@media (min-width: 768px) and (min-width: 992px) {
+  .container {
+    padding: 0;
+  }
+
+  .navbar ul {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* For extra large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
