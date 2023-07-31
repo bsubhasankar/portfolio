@@ -89,6 +89,7 @@ header {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #000304;
 }
 
 #about-para p {
@@ -125,78 +126,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* Education, Expertise, and Experience Sections */
 
-#education,
-#expertise,
-#experience {
-  padding: 40px 0;
-  
-}
-
-#education h2,
-#expertise h2,
-#experience h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#education ul,
-#expertise ul,
-#experience ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#education li,
-#expertise li,
-#experience li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.experience-details {
-  margin-top: 30px;
-}
-
-.experience-details h4 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.experience-details ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.experience-details li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-/* Add some spacing between sections */
-#education {
-  border-top: 1px solid #ccc;
-}
-
-#expertise {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-
-#experience {
-  border-bottom: 1px solid #ccc;
-}
-
-  
 /* Contact Section */
 #contact {
     text-align: left;
@@ -526,7 +456,6 @@ footer p {
 }
 /* Media Queries */
 
-/* Media Queries */
 
 /* For small screens (max-width: 767px) */
 @media (max-width: 767px) {
@@ -545,7 +474,7 @@ footer p {
   }
   
   .contact-details {
-    padding: 10%;
+    padding: 0px;
     order: 1;
     text-align: left;
     
